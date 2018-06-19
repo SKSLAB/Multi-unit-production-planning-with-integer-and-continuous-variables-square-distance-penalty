@@ -1,4 +1,4 @@
-# Multi-unit production planning with integer and continuous variables absolute penalty approach 
+# Multi-unit production planning with integer and continuous variables absolute distance penalty approach 
 ##### An optimization test suite involving 162 integer and 108 continuous variables 
 
 This submission can be used to evaluate the performance of optimization techniques on problems with integer and continuous variables. This optimization problem arises for maximization of profit in production planning. However these files can be used as black-box optimization problems.
