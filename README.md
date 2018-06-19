@@ -5,7 +5,7 @@ This submission can be used to evaluate the performance of optimization techniqu
 
 There are eight minimization optimization problems in this suite (case1.p, case2.p, case3.p, case4.p, case5.p, case6.p, case7.p and cas8.p). All the cases have a problem dimension of 270 variables. The first 162 variables are integer (if not, then rounded using MATLAB inbuilt round function) whereas the remaining 108 variables are continuous. 
 
-Each of them follows square distance penalty approach and  has the following format
+Each of them follows absolute distance penalty approach and  has the following format
 ```
 [ F ] = case1(X);
 ```
@@ -25,10 +25,10 @@ The file Script.m shows how to use these files along with an optimization algori
 
 
 **Note:** <br> 
-  1. The square distance penalty comes in while handling domain hole constraint, which is the minimum between squares of X<sub>j</sub> and (X<sub>j</sub>-l<sub>j</sub>). Here X<sub>j</sub> refers to the jth dimension of solution and l<sub>j</sub> refers to minimum non-zero production level.
+  1. The absolute distance penalty comes in while handling domain hole constraint, which is the minimum between absolute of X<sub>j</sub> and (X<sub>j</sub>-l<sub>j</sub>). Here X<sub>j</sub> refers to the jth dimension of solution and l<sub>j</sub> refers to minimum non-zero production level.
 
   2. Case 1 - 4 have the same problem structure but employ different data; Case 5 - 8 has same set of data as compared to Case 1 - 4, but do not employ a certain feature (flexible) of the problem.
 
   2. The objective function files are capable of determining the objective function values of multiple solutions (i.e., if required, the entire population can be sent to the objective function file).
 
-**Reference:** Sandeep Singh Chauhan, Prakash Kotecha,A novel strategy for the combinatorial production planning problem using integer variables and performance evaluation of recent optimization algorithms,         Swarm and Evolutionary Computation,2018.
+**Reference:** Sandeep Singh Chauhan, Prakash Kotecha,A novel strategy for the combinatorial production planning problem using integer variables and performance evaluation of recent optimization algorithms, Swarm and Evolutionary Computation,2018.
